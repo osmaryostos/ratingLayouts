@@ -24,16 +24,23 @@ class MyApp extends StatelessWidget {
       ],
     );
     //separo el texto en otro elemento
-    const descTextStyle = TextStyle( style: TextStyle(
+    const descTextStyle = TextStyle(
       color: Colors.black,
       fontWeight: FontWeight.w800,
       fontFamily: 'Roboto',
       letterSpacing: 0.5,
       fontSize: 20,
-    ),);
+    );
     
-    var rating = Container(
-      padding: EdgeInsets.,
+    var ratings = Container(
+      padding: EdgeInsets.all(20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          stars,
+          Text("100 Reviews", style: descTextStyle,)
+        ],
+      )
     );
     
     
@@ -62,7 +69,7 @@ class MyApp extends StatelessWidget {
           iconList,
         ],
       ),
-    )
+    );
 
 
     return MaterialApp(
